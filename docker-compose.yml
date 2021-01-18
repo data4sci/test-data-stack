@@ -53,7 +53,7 @@ services:
   airflow:
     container_name: "test-data-stack_airflow"
     restart: "always"
-    image: puckel/docker-airflow:1.9.0-2
+    image: puckel/docker-airflow #:1.9.0-2
     depends_on:
       - postgres
     env_file:
